@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                Evaluate NLP News
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form onsubmit="return Client.handleSubmit(event)">
+                    <div class="form-div">
+                        <input id="url" type="url" name="url" placeholder="Insert a news URL">
+                        <input class="button" type="submit" name="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    </div>
+                </form>
+            <section>
+
+            <section>
+                <h2><u> Results: </u></h2>
+                <br>
+                <div id="results">
+                    <h3>Polarity:</h3>
+                    <p id="polarity"></p>
+                    <br>
+                    <h3>Subjectivity:</h3>
+                    <p id="subjectivity"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <!-- <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script> -->
+    </body>
+</html>
